@@ -19,3 +19,13 @@ use App\Http\Controllers\pharmacyController;
 Route::resource("/categories",CategoryController::class);
 Route::resource("/products",ProductController::class);
 Route::resource("/pharmacies",PharmacyController::class);
+Route::get('/search' ,[App\Http\Controllers\ProductController::class,'search']);
+Route::get('/search' ,[App\Http\Controllers\CategoryController::class,'search']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

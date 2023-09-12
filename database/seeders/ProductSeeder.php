@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use DB;
 
 class ProductSeeder extends Seeder
 {
@@ -13,13 +14,13 @@ class ProductSeeder extends Seeder
     public function run(): void
     {
         //
-        DB::table('categories')->insert([ 
+        DB::table('products')->insert([ 
          
-            'id'=>'1',
-            'drug_name'=>'panadol extra',
-            'description'=>'Panadol Extra 500mg/65mg Soluble Effervescent Tablets, paracetamol 500mg, caffeine 65mg. Indications: Relief of mild to moderate pain including rheumatism, neuralgia, musculoskeletal disorders, headache, symptoms of colds and flu, fever, toothache and menstrual pain.',
-            'drug_img'=>''
-
+            'id'=>'2',
+            'drug_name'=>'Brufen',
+            'description'=>'it is for pain',
+            'drug_image'=>'drug'
+            
             
 
         ]);
